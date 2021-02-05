@@ -1,0 +1,8 @@
+<h1>{{data.name}}</h1>
+
+{% if data.repos %}
+<h2>His repos:</h2>
+{% for repo in data.repos %}
+<h3>- {{repo}}</h3>
+{% endfor %}
+{% endif %}
