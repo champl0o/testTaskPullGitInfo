@@ -2,6 +2,7 @@ import requests
 from django.shortcuts import render
 
 def getGitHubUserInfo(request):
+    """Function for parsing user github name and list of his repos"""
     user_info = {}
 
     if request.method == 'GET':
