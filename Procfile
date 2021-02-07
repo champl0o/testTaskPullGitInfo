@@ -1,0 +1,1 @@
+web: gunicorn pullInfo.wsgi --log-file -
