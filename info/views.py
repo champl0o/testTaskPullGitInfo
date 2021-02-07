@@ -2,22 +2,22 @@ import requests
 from django.shortcuts import render
 
 def getGitHubUserInfo(request):
-    userInfo = {}
+    user_info = {}
 
     if request.method == 'GET':
         username = request.GET.get('user')
 
         req = requests.get('https://api.github.com/users/' + username)
         if req.status_code == 200:
-            jsonList = req.json()
-            name = jsonList['name']
-            userInfo['name'] = name
+            json_list = req.json()
+            name = json_list['name']
+            user_info['name'] = name
 
             req = requests.get('https://api.github.com/users/' + username + '/repos')
-            jsonList = req.json()
+            json_list = req.json()
 
-            userInfo['repos'] = []
-            for info in jsonList:
-                userInfo['repos'].append(info['name'])
+            user_info['repos'] = []
+            for info in json_list:
+                user_info['repos'].append(info['name'])
 
-    return render(request, 'results.html', {'data': userInfo})
+    return render(request, 'results.html', {'data': user_info})
