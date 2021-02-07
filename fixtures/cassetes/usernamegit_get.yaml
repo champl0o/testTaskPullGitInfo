@@ -1,0 +1,81 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: https://api.github.com/users/champl0o
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA51TwY6bMBT8lcjnbAxs2DaWqqpSj02lVklV7SUy4IB3jW3ZhjSN9t87BrZKc6jE
+        noCnmXnzhvcuRJlaasJI2fDWqsSQJZEVYXmabdbp+82SaFOJQyyR7edvDz9+flXl0/7X9uk52e7q
+        HHDe88DdoXMKmCYE6xmlY9Gvahmarui8cKXRQeiwKk1LO/qq/7H/sIZG7SaVoREKN2pWTkojHXKe
+        XjluQqtuDIyNB/gV8GiUMiewb+3+rwH9y4Kx8V3q+g0KYF2oCY1AWhjhJQ4ufZhnZmBcaHzgt0QN
+        j/idqGYZmjiwc9JwcqFOWDOIdYUvnbRBGj3P2D9MKBlXcy1/8/lKYHoIREvzLAwMMEWPTZtHHSkX
+        ap3seXmOUThRCtkj2DfI3XChFs5WYLf3+PExZhnEgVdtvL0jV17g0HgbAd9NyzUQ2FzL9Zkw3Sm1
+        JAUOdTwNZcohU3x96WW/WuyfHZdaxLlbLnGFI6ORTvBCQXNSkAaUTwsfugrxLI7OtItBIbo7yRCm
+        vRyNjCTbFUqWhzFYli/JVBi2kLDk9SBwUoSlV+dBWIYZ4CAgQB7QOUvSzV3ycJdkuzRnWc7u3z2i
+        c2era0yWAgDYLs3YOmP32SN5+QMaXXOdpgQAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+        X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '484'
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 07 Feb 2021 09:19:40 GMT
+      ETag:
+      - W/"60023ee4994f79cf14d72144dc974db233a1783da1136cff1af6731733f3f14c"
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Vary:
+      - Accept, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v3; format=json
+      X-GitHub-Request-Id:
+      - E7C7:560A:845D230:8FC0FCD:601FB0AC
+      X-RateLimit-Limit:
+      - '60'
+      X-RateLimit-Remaining:
+      - '42'
+      X-RateLimit-Reset:
+      - '1612690846'
+      X-XSS-Protection:
+      - 1; mode=block
+      last-modified:
+      - Sat, 06 Feb 2021 12:42:32 GMT
+      x-ratelimit-used:
+      - '18'
+    status:
+      code: 200
+      message: OK
+version: 1

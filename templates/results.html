@@ -1,8 +1,20 @@
-<h1>{{data.name}}</h1>
+{% extends 'home.html' %}
+
+{% block content %}
+
+{% if data %}
+    <h1>{{data.name}}</h1>
 
 {% if data.repos %}
-<h2>His repos:</h2>
+    <h2>Repos:</h2>
+
 {% for repo in data.repos %}
-<h3>- {{repo}}</h3>
+    <h3>- {{repo}}</h3>
 {% endfor %}
+{% else %}
+    <h3>This user has no repos</h3>
 {% endif %}
+{% else %}
+    <h1>No user with this username.</h1>
+{% endif %}
+{% endblock content %}
